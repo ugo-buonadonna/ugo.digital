@@ -1,0 +1,30 @@
+{
+  "presets": [
+    "react",
+    "flow",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "IE >= 11"],
+          "modules": false,
+          "loose": true
+        },
+        "useBuiltIns": true
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-react-jsx",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-runtime",
+    [
+      "babel-root-import",
+      {
+        "rootPathSuffix": "src/"
+      }
+    ],
+    "lodash"
+  ]
+}
